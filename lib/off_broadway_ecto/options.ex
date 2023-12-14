@@ -9,13 +9,12 @@ defmodule OffBroadwayEcto.Options do
         """,
         default: 5000
       ],
-      client: [
-        required: true,
+      force_interval: [
+        type: :boolean,
         doc: """
-        A module that implements the `OffBroadwayEcto.Client`
-        behaviour. This module is responsible for fetching and acknowledging the
-        messages.
-        """
+        Flag to force the interval when scheduling the next
+        """,
+        default: false
       ],
       demand: [
         doc: """
