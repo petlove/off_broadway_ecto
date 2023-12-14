@@ -16,6 +16,14 @@ defmodule OffBroadwayEcto.Options do
         """,
         default: false
       ],
+      client: [
+        required: true,
+        doc: """
+        A module that implements the `OffBroadwayEcto.Client`
+        behaviour. This module is responsible for fetching and acknowledging the
+        messages.
+        """
+      ],
       demand: [
         doc: """
         Base number of records fetched from the database.
